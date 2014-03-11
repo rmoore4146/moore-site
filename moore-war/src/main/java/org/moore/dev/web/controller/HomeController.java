@@ -1,5 +1,6 @@
 package org.moore.dev.web.controller;
 
+import org.moore.dev.web.controller.util.MobileDeviceUtil;
 import org.springframework.mobile.device.Device;
 import org.springframework.mobile.device.DeviceUtils;
 import org.springframework.stereotype.Controller;
@@ -28,12 +29,19 @@ public class HomeController {
 
     @RequestMapping(value = "/home", method = RequestMethod.GET)
     public String getHomePage(ModelMap map, HttpServletRequest request) {
-        addMobileFlagToModel(map, request);
+        MobileDeviceUtil.addMobileDeviceFlagToModel(map, request);
         return "home";
     }
 
-    private void addMobileFlagToModel(ModelMap map, HttpServletRequest request) {
-        Device currentDevice = DeviceUtils.getCurrentDevice(request);
-        map.addAttribute("isMobile", currentDevice.isMobile());
+    @RequestMapping(value = "/about", method = RequestMethod.GET)
+    public String getAboutPage(ModelMap map, HttpServletRequest request) {
+        MobileDeviceUtil.addMobileDeviceFlagToModel(map, request);
+        return "about";
+    }
+
+    @RequestMapping(value = "/contact", method = RequestMethod.GET)
+    public String getContactPage(ModelMap map, HttpServletRequest request) {
+        MobileDeviceUtil.addMobileDeviceFlagToModel(map, request);
+        return "contact";
     }
 }

@@ -20,6 +20,7 @@
                 </div>
             </div>
         </div>
+
         <%--Include Footer--%>
         <%@include file="decorator/footer.jsp"%>
     </body>

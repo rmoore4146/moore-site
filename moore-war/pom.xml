@@ -4,13 +4,13 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.moore.dev</groupId>
-    <artifactId>base-war</artifactId>
+    <artifactId>moore-war</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>war</packaging>
 
     <name>base-war</name>
     <!-- NOTE: This is your URL from when you signed up for GAE -->
-    <url>replaceme</url>
+    <url>ryanmoo.re</url>
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>
@@ -211,7 +211,11 @@
             <artifactId>spring-test</artifactId>
             <version>3.0.1.RELEASE</version>
         </dependency>
-
+        <dependency>
+            <groupId>org.codehaus.jackson</groupId>
+            <artifactId>jackson-mapper-asl</artifactId>
+            <version>1.5.6</version>
+        </dependency>
         <dependency>
             <groupId>com.google.appengine</groupId>
             <artifactId>datanucleus-jpa</artifactId>
