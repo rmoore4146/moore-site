@@ -18,6 +18,7 @@
                 <li <c:if test="${fn:contains(pageContext.request.servletPath, 'blog')}">class="active"</c:if>><a href="${contextPath}/blog">Blog</a></li>
                 <li <c:if test="${fn:contains(pageContext.request.servletPath, 'about')}">class="active"</c:if>><a href="${contextPath}/about">About</a></li>
                 <li <c:if test="${fn:contains(pageContext.request.servletPath, 'resume')}">class="active"</c:if>><a href="${contextPath}/resume">Resume</a></li>
+                <li <c:if test="${fn:contains(pageContext.request.servletPath, 'contact')}">class="active"</c:if>><a href="${contextPath}/contact">Contact</a></li>
                 <%--<li <c:if test="${fn:contains(pageContext.request.servletPath, 'links')}">class="active"</c:if>><a href="${contextPath}/links">Links</a></li>--%>
                 <%--<li <c:if test="${fn:contains(pageContext.request.servletPath, 'location')}">class="active"</c:if>><a href="${contextPath}/location">Location</a></li>--%>
             </ul>

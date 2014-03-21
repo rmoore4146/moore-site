@@ -15,9 +15,9 @@
     <%--Body goes here--%>
     <div class="container bodyContainer">
 
-        <c:set var="resumeLink" value="${contextPath}/site/pdf/Moore_Resume.pdf"/>
+        <c:set var="resumeLink" value="${contextPath}/site/pdf/Resume_RyanMoore_Redacted.pdf"/>
         <c:choose>
-            <c:when test="${isMobile}">
+            <c:when test="${isMobile || isTablet}">
                 <div class="jumbotron">
                     <h2>Resume...</h2>
                     <p><a href="${resumeLink}">Click here to download...</a</p>

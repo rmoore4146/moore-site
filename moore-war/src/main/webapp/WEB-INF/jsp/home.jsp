@@ -16,7 +16,8 @@
             <div class="container bodyContainer">
                 <div class="jumbotron">
                     <h2>Welcome...</h2>
-                    <p>I will punch you in the mouth, Spohn.</p>
+                    <p class="left">My name is Ryan Moore. I'm a software developer and this is my development "sandbox" website. You'll find information about me, my resume, links, contact information, and an unmaintained blog. Enjoy.</p>
+                    <img src="${contextPath}/site/img/at_hom.jpg" class="img-responsive center-block"/>
                 </div>
             </div>
         </div>

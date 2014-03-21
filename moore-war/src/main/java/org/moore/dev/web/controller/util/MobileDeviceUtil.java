@@ -15,5 +15,6 @@ public class MobileDeviceUtil {
     public static void addMobileDeviceFlagToModel(ModelMap map, HttpServletRequest request) {
         Device currentDevice = DeviceUtils.getCurrentDevice(request);
         map.addAttribute("isMobile", currentDevice.isMobile());
+        map.addAttribute("isTablet", currentDevice.isMobile());
     }
 }

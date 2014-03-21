@@ -21,7 +21,7 @@ var blogPost = {
             dataType: 'html',
             success: function(result) {
                 $('.bodyContainer .jumbotron').prepend($(result));
-                common.getToForm("blog");
+                common.postToForm("blog");
             },
             error: function(result) {
                 $('.bodyContainer .jumbotron').prepend($(result));
